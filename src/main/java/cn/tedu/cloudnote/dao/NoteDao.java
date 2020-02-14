@@ -18,14 +18,14 @@ public interface NoteDao {
 			String notebookId);
 	
 	Note findNoteById(String noteId);
-	
+	//  修改笔记
 	int updateNote(Note note);
-	
+	// 添加笔记
 	int addNote(Note note);
 	
-	//NoteDao
+	//删除笔记
 	int deleteNoteById(String id);
-	
+	// 删除多个笔记
 	int deleteNotesById(String... ids);
 	
 	/**
@@ -41,6 +41,7 @@ public interface NoteDao {
 			@Param("body") String body, 
 			@Param("key") String key);
 	// map("title":title, "body":body, "key":key)
+	
 	
 }
 

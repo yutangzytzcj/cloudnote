@@ -31,6 +31,11 @@ public interface NotebookDao {
 			@Param("start") int start,
 			@Param("size") int size);
 }
+   //  根据用户ID 添加笔记本
+   // 根据用户ID，删除笔记本
+
+  // 根据笔记本ID ，修改题目
+  
 
   
 
