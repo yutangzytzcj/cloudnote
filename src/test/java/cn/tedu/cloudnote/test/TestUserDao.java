@@ -32,6 +32,20 @@ public class TestUserDao {
 			=new User("1","liqing","123456","","mangseng");
 		dao.addUser(user);
 	}
+	@Test
+	public void testUpdatePwd() {
+		ApplicationContext ctx
+		= new ClassPathXmlApplicationContext(
+				"conf/spring-mybatis.xml");
+     UserDao dao
+		=ctx.getBean("userDao", UserDao.class);
+    String pwd="99999999"; String userID="5040421b-ab78-413f-a30f-48237508b066";
+    User user=new User();
+    user.setPassword(pwd);
+    user.setId(userID);
+    dao.UpdatePwd(user);
+    System.out.println(user);
+	}
 }
 
 

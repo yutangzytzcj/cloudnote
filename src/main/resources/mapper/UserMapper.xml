@@ -43,6 +43,14 @@
 		where
 				cn_user_id=#{userId}
 	</select>
+	<!-- 修改用户密码  --> 
+	<update id="UpdatePwd" parameterType="string">
+	update cn_user set 
+	cn_user_password=#{password} 
+	where
+	cn_user_id=#{id}
+	</update>
+	
 </mapper>
 
 
