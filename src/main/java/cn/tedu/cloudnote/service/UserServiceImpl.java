@@ -68,6 +68,10 @@ public class UserServiceImpl implements UserService{
 		
 		return user;
 	}
+	public boolean alterPwd(String name, String userid, String newpwd) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 
 }
 

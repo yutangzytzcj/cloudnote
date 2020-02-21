@@ -9,6 +9,7 @@ public interface UserDao {
 	void addUser(User user);
 	// 根据用户修改密码
 	void UpdatePwd(User user);
+	
 	//  查找用户根据id
 	User findUserById(String userId);
 }

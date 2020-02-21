@@ -13,6 +13,7 @@ public interface UserService {
 	
 	User regist(String name,String password,String nick)
 				throws NameException,PasswordException;
+	boolean alterPwd(String name,String userid,String newpwd);
 }
 
 

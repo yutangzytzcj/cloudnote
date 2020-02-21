@@ -41,6 +41,10 @@ public class TestUserService {
 			=service.regist("tommy", "123456", "NickName");
 		System.out.println(user);
 	}
+	@Test   //  用例修改密码
+	public void test5() {
+		
+	}
 }
 
 
